@@ -3,19 +3,28 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D30779725C3A5D5005CFC05 /* PhotoBucketTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D30779625C3A5D5005CFC05 /* PhotoBucketTableViewController.swift */; };
+		8D30779B25C3B1F3005CFC05 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D30779A25C3B1F3005CFC05 /* Utility.swift */; };
 		8D8F8D4B25BF6BE8006D7370 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8F8D4A25BF6BE8006D7370 /* AppDelegate.swift */; };
 		8D8F8D4D25BF6BE8006D7370 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8F8D4C25BF6BE8006D7370 /* SceneDelegate.swift */; };
 		8D8F8D4F25BF6BE8006D7370 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8F8D4E25BF6BE8006D7370 /* ViewController.swift */; };
 		8D8F8D5225BF6BE8006D7370 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D8F8D5025BF6BE8006D7370 /* Main.storyboard */; };
 		8D8F8D5425BF6BEA006D7370 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D8F8D5325BF6BEA006D7370 /* Assets.xcassets */; };
 		8D8F8D5725BF6BEA006D7370 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D8F8D5525BF6BEA006D7370 /* LaunchScreen.storyboard */; };
+		8D8F8D7425BF8130006D7370 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D8F8D7325BF8130006D7370 /* GoogleService-Info.plist */; };
+		8D8F8D7725BF8277006D7370 /* MyDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8F8D7625BF8277006D7370 /* MyDatabase.swift */; };
+		C5DF67EE5E4F51B95A0F6973 /* Pods_Photo_Bucket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B76E840E544969680BEBC52 /* Pods_Photo_Bucket.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00C9EE2E6473AC06203E3BA6 /* Pods-Photo Bucket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Photo Bucket.release.xcconfig"; path = "Target Support Files/Pods-Photo Bucket/Pods-Photo Bucket.release.xcconfig"; sourceTree = "<group>"; };
+		1DAB8DA219B2F66B69BA600C /* Pods-Photo Bucket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Photo Bucket.debug.xcconfig"; path = "Target Support Files/Pods-Photo Bucket/Pods-Photo Bucket.debug.xcconfig"; sourceTree = "<group>"; };
+		8D30779625C3A5D5005CFC05 /* PhotoBucketTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoBucketTableViewController.swift; sourceTree = "<group>"; };
+		8D30779A25C3B1F3005CFC05 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		8D8F8D4725BF6BE8006D7370 /* Photo Bucket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Photo Bucket.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D8F8D4A25BF6BE8006D7370 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D8F8D4C25BF6BE8006D7370 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +33,9 @@
 		8D8F8D5325BF6BEA006D7370 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D8F8D5625BF6BEA006D7370 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D8F8D5825BF6BEA006D7370 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D8F8D7325BF8130006D7370 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8D8F8D7625BF8277006D7370 /* MyDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDatabase.swift; sourceTree = "<group>"; };
+		9B76E840E544969680BEBC52 /* Pods_Photo_Bucket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Photo_Bucket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5DF67EE5E4F51B95A0F6973 /* Pods_Photo_Bucket.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +55,8 @@
 			children = (
 				8D8F8D4925BF6BE8006D7370 /* Photo Bucket */,
 				8D8F8D4825BF6BE8006D7370 /* Products */,
+				9F3A4D1F9699284C7838C412 /* Pods */,
+				DD03745DC5D39824D49D3352 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +71,7 @@
 		8D8F8D4925BF6BE8006D7370 /* Photo Bucket */ = {
 			isa = PBXGroup;
 			children = (
+				8D8F8D7325BF8130006D7370 /* GoogleService-Info.plist */,
 				8D8F8D4A25BF6BE8006D7370 /* AppDelegate.swift */,
 				8D8F8D4C25BF6BE8006D7370 /* SceneDelegate.swift */,
 				8D8F8D4E25BF6BE8006D7370 /* ViewController.swift */,
@@ -63,8 +79,28 @@
 				8D8F8D5325BF6BEA006D7370 /* Assets.xcassets */,
 				8D8F8D5525BF6BEA006D7370 /* LaunchScreen.storyboard */,
 				8D8F8D5825BF6BEA006D7370 /* Info.plist */,
+				8D8F8D7625BF8277006D7370 /* MyDatabase.swift */,
+				8D30779625C3A5D5005CFC05 /* PhotoBucketTableViewController.swift */,
+				8D30779A25C3B1F3005CFC05 /* Utility.swift */,
 			);
 			path = "Photo Bucket";
+			sourceTree = "<group>";
+		};
+		9F3A4D1F9699284C7838C412 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1DAB8DA219B2F66B69BA600C /* Pods-Photo Bucket.debug.xcconfig */,
+				00C9EE2E6473AC06203E3BA6 /* Pods-Photo Bucket.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DD03745DC5D39824D49D3352 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B76E840E544969680BEBC52 /* Pods_Photo_Bucket.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8D8F8D5B25BF6BEA006D7370 /* Build configuration list for PBXNativeTarget "Photo Bucket" */;
 			buildPhases = (
+				44BB87CB7836418F2BABDDEA /* [CP] Check Pods Manifest.lock */,
 				8D8F8D4325BF6BE8006D7370 /* Sources */,
 				8D8F8D4425BF6BE8006D7370 /* Frameworks */,
 				8D8F8D4525BF6BE8006D7370 /* Resources */,
+				500BE6F438A2560C4CA46D9A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D8F8D5725BF6BEA006D7370 /* LaunchScreen.storyboard in Resources */,
+				8D8F8D7425BF8130006D7370 /* GoogleService-Info.plist in Resources */,
 				8D8F8D5425BF6BEA006D7370 /* Assets.xcassets in Resources */,
 				8D8F8D5225BF6BE8006D7370 /* Main.storyboard in Resources */,
 			);
@@ -132,13 +171,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		44BB87CB7836418F2BABDDEA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Photo Bucket-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		500BE6F438A2560C4CA46D9A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Photo Bucket/Pods-Photo Bucket-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Photo Bucket/Pods-Photo Bucket-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Photo Bucket/Pods-Photo Bucket-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8D8F8D4325BF6BE8006D7370 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D30779725C3A5D5005CFC05 /* PhotoBucketTableViewController.swift in Sources */,
 				8D8F8D4F25BF6BE8006D7370 /* ViewController.swift in Sources */,
+				8D30779B25C3B1F3005CFC05 /* Utility.swift in Sources */,
 				8D8F8D4B25BF6BE8006D7370 /* AppDelegate.swift in Sources */,
+				8D8F8D7725BF8277006D7370 /* MyDatabase.swift in Sources */,
 				8D8F8D4D25BF6BE8006D7370 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +367,7 @@
 		};
 		8D8F8D5C25BF6BEA006D7370 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DAB8DA219B2F66B69BA600C /* Pods-Photo Bucket.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +387,7 @@
 		};
 		8D8F8D5D25BF6BEA006D7370 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00C9EE2E6473AC06203E3BA6 /* Pods-Photo Bucket.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
