@@ -8,4 +8,11 @@ target 'Photo Bucket' do
   # Pods for Photo Bucket
   pod 'Firebase/Firestore'
   pod 'Firebase/Analytics'
+  pod 'Firebase/Storage'
+  
+  pod 'FirebaseUI/Auth'
+  pod 'FirebaseUI/Google'
+  pod 'FirebaseUI/Email'
+  
+  
 end

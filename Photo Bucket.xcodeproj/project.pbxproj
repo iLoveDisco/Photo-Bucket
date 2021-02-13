@@ -17,6 +17,14 @@
 		8D8F8D5725BF6BEA006D7370 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D8F8D5525BF6BEA006D7370 /* LaunchScreen.storyboard */; };
 		8D8F8D7425BF8130006D7370 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D8F8D7325BF8130006D7370 /* GoogleService-Info.plist */; };
 		8D8F8D7725BF8277006D7370 /* MyDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8F8D7625BF8277006D7370 /* MyDatabase.swift */; };
+		8D90CCE425D1C9530021F563 /* SignInPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D90CCE325D1C9530021F563 /* SignInPageVC.swift */; };
+		8D90CD0525D1D7040021F563 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D90CD0425D1D7040021F563 /* User.swift */; };
+		8DB54ECB25D4848A0038CFF4 /* MyTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB54ECA25D4848A0038CFF4 /* MyTabBarVC.swift */; };
+		8DB54ECF25D65A6C0038CFF4 /* ImagePickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB54ECE25D65A6C0038CFF4 /* ImagePickerVC.swift */; };
+		8DB54ED225D66AA30038CFF4 /* SharedAlbumVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB54ED125D66AA30038CFF4 /* SharedAlbumVC.swift */; };
+		8DB54ED625D66B030038CFF4 /* PhotoDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB54ED525D66B030038CFF4 /* PhotoDetailVC.swift */; };
+		8DB54ED925D66B910038CFF4 /* ProfilePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB54ED825D66B910038CFF4 /* ProfilePageVC.swift */; };
+		8DB54EDC25D66BA30038CFF4 /* MembersTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB54EDB25D66BA30038CFF4 /* MembersTableVC.swift */; };
 		C5DF67EE5E4F51B95A0F6973 /* Pods_Photo_Bucket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B76E840E544969680BEBC52 /* Pods_Photo_Bucket.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +43,14 @@
 		8D8F8D5825BF6BEA006D7370 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D8F8D7325BF8130006D7370 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8D8F8D7625BF8277006D7370 /* MyDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDatabase.swift; sourceTree = "<group>"; };
+		8D90CCE325D1C9530021F563 /* SignInPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPageVC.swift; sourceTree = "<group>"; };
+		8D90CD0425D1D7040021F563 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8DB54ECA25D4848A0038CFF4 /* MyTabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBarVC.swift; sourceTree = "<group>"; };
+		8DB54ECE25D65A6C0038CFF4 /* ImagePickerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerVC.swift; sourceTree = "<group>"; };
+		8DB54ED125D66AA30038CFF4 /* SharedAlbumVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedAlbumVC.swift; sourceTree = "<group>"; };
+		8DB54ED525D66B030038CFF4 /* PhotoDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailVC.swift; sourceTree = "<group>"; };
+		8DB54ED825D66B910038CFF4 /* ProfilePageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePageVC.swift; sourceTree = "<group>"; };
+		8DB54EDB25D66BA30038CFF4 /* MembersTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MembersTableVC.swift; sourceTree = "<group>"; };
 		9B76E840E544969680BEBC52 /* Pods_Photo_Bucket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Photo_Bucket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -71,6 +87,8 @@
 		8D8F8D4925BF6BE8006D7370 /* Photo Bucket */ = {
 			isa = PBXGroup;
 			children = (
+				8D90CD0325D1D6FA0021F563 /* Models */,
+				8D90CCE225D1C93D0021F563 /* View Controllers */,
 				8D8F8D7325BF8130006D7370 /* GoogleService-Info.plist */,
 				8D8F8D4A25BF6BE8006D7370 /* AppDelegate.swift */,
 				8D8F8D4C25BF6BE8006D7370 /* SceneDelegate.swift */,
@@ -80,10 +98,32 @@
 				8D8F8D5525BF6BEA006D7370 /* LaunchScreen.storyboard */,
 				8D8F8D5825BF6BEA006D7370 /* Info.plist */,
 				8D8F8D7625BF8277006D7370 /* MyDatabase.swift */,
-				8D30779625C3A5D5005CFC05 /* PhotoBucketTableViewController.swift */,
 				8D30779A25C3B1F3005CFC05 /* Utility.swift */,
 			);
 			path = "Photo Bucket";
+			sourceTree = "<group>";
+		};
+		8D90CCE225D1C93D0021F563 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8D90CCE325D1C9530021F563 /* SignInPageVC.swift */,
+				8DB54ECA25D4848A0038CFF4 /* MyTabBarVC.swift */,
+				8DB54ECE25D65A6C0038CFF4 /* ImagePickerVC.swift */,
+				8D30779625C3A5D5005CFC05 /* PhotoBucketTableViewController.swift */,
+				8DB54ED125D66AA30038CFF4 /* SharedAlbumVC.swift */,
+				8DB54ED525D66B030038CFF4 /* PhotoDetailVC.swift */,
+				8DB54ED825D66B910038CFF4 /* ProfilePageVC.swift */,
+				8DB54EDB25D66BA30038CFF4 /* MembersTableVC.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		8D90CD0325D1D6FA0021F563 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8D90CD0425D1D7040021F563 /* User.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		9F3A4D1F9699284C7838C412 /* Pods */ = {
@@ -115,6 +155,7 @@
 				8D8F8D4425BF6BE8006D7370 /* Frameworks */,
 				8D8F8D4525BF6BE8006D7370 /* Resources */,
 				500BE6F438A2560C4CA46D9A /* [CP] Embed Pods Frameworks */,
+				BC061E74788B6D06A5D9A84F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -211,6 +252,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Photo Bucket/Pods-Photo Bucket-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		BC061E74788B6D06A5D9A84F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Photo Bucket/Pods-Photo Bucket-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Photo Bucket/Pods-Photo Bucket-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Photo Bucket/Pods-Photo Bucket-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -218,10 +276,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DB54ED625D66B030038CFF4 /* PhotoDetailVC.swift in Sources */,
 				8D30779725C3A5D5005CFC05 /* PhotoBucketTableViewController.swift in Sources */,
 				8D8F8D4F25BF6BE8006D7370 /* ViewController.swift in Sources */,
 				8D30779B25C3B1F3005CFC05 /* Utility.swift in Sources */,
+				8DB54ED925D66B910038CFF4 /* ProfilePageVC.swift in Sources */,
 				8D8F8D4B25BF6BE8006D7370 /* AppDelegate.swift in Sources */,
+				8DB54ED225D66AA30038CFF4 /* SharedAlbumVC.swift in Sources */,
+				8DB54ECB25D4848A0038CFF4 /* MyTabBarVC.swift in Sources */,
+				8D90CD0525D1D7040021F563 /* User.swift in Sources */,
+				8DB54EDC25D66BA30038CFF4 /* MembersTableVC.swift in Sources */,
+				8DB54ECF25D65A6C0038CFF4 /* ImagePickerVC.swift in Sources */,
+				8D90CCE425D1C9530021F563 /* SignInPageVC.swift in Sources */,
 				8D8F8D7725BF8277006D7370 /* MyDatabase.swift in Sources */,
 				8D8F8D4D25BF6BE8006D7370 /* SceneDelegate.swift in Sources */,
 			);

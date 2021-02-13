@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,16 +17,60 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="zAM-Ku-9yb" kind="relationship" relationship="rootViewController" id="uh9-5A-cGD"/>
+                        <segue destination="8pr-2j-rdi" kind="relationship" relationship="rootViewController" id="v67-7J-Yp2"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0iY-SO-HZs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="938" y="102"/>
         </scene>
+        <!--Sign In PageVC-->
+        <scene sceneID="UKV-xm-anD">
+            <objects>
+                <viewController id="8pr-2j-rdi" customClass="SignInPageVC" customModule="Photo_Bucket" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kOT-Yh-t34">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photo Bucket" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ey-N6-jgR">
+                                <rect key="frame" x="126" y="267" width="163" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TKw-1I-DZu">
+                                <rect key="frame" x="179" y="433" width="57" height="30"/>
+                                <state key="normal" title="Let's Go"/>
+                                <connections>
+                                    <action selector="pressedGoButton:" destination="8pr-2j-rdi" eventType="touchUpInside" id="0dr-8P-e6J"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yO4-t6-BqH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1Ey-N6-jgR" firstAttribute="leading" secondItem="yO4-t6-BqH" secondAttribute="leading" constant="126" id="0pg-Lg-cC5"/>
+                            <constraint firstItem="1Ey-N6-jgR" firstAttribute="top" secondItem="yO4-t6-BqH" secondAttribute="top" constant="179" id="64C-yo-LYG"/>
+                            <constraint firstItem="yO4-t6-BqH" firstAttribute="trailing" secondItem="TKw-1I-DZu" secondAttribute="trailing" constant="178" id="92Y-dB-kdo"/>
+                            <constraint firstItem="TKw-1I-DZu" firstAttribute="leading" secondItem="yO4-t6-BqH" secondAttribute="leading" constant="179" id="MTa-Vs-ecA"/>
+                            <constraint firstItem="TKw-1I-DZu" firstAttribute="top" secondItem="1Ey-N6-jgR" secondAttribute="bottom" constant="134" id="McB-3o-pbG"/>
+                            <constraint firstItem="yO4-t6-BqH" firstAttribute="trailing" secondItem="1Ey-N6-jgR" secondAttribute="trailing" constant="125" id="X6u-le-rue"/>
+                            <constraint firstItem="yO4-t6-BqH" firstAttribute="bottom" secondItem="TKw-1I-DZu" secondAttribute="bottom" constant="399" id="sJf-0T-Gqi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="zUm-2I-ghK"/>
+                    <connections>
+                        <segue destination="PQh-rd-tgi" kind="show" identifier="LOGIN_TO_SA_ID" id="9Vr-p5-N3a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WaA-QU-rXE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2107" y="23"/>
+        </scene>
         <!--Photo Bucket Table View Controller-->
         <scene sceneID="a9O-GS-5ab">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hcb-jz-ddq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tableViewController id="zAM-Ku-9yb" customClass="PhotoBucketTableViewController" customModule="Photo_Bucket" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="6p1-es-Ywx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -39,6 +84,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="l3y-0q-Vfg" kind="show" id="QZj-Ai-r4k"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -46,14 +94,186 @@
                             <outlet property="delegate" destination="zAM-Ku-9yb" id="hfO-FA-trL"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="" image="folder" catalog="system" selectedImage="folder" id="i1V-Mm-vvm"/>
                     <navigationItem key="navigationItem" id="shj-LO-m6z"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hcb-jz-ddq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1706" y="102"/>
+            <point key="canvasLocation" x="3523" y="374"/>
+        </scene>
+        <!--Profile PageVC-->
+        <scene sceneID="LVX-FC-5G4">
+            <objects>
+                <viewController id="d3F-at-7I8" customClass="ProfilePageVC" customModule="Photo_Bucket" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pPK-D6-FxB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="h0b-NO-hyy">
+                                <rect key="frame" x="106" y="181" width="202" height="174"/>
+                                <color key="tintColor" systemColor="secondaryLabelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="174" id="lw5-BX-HLT"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6lU-ZQ-yqD">
+                                <rect key="frame" x="106" y="456" width="202" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ztK-I3-ced">
+                                <rect key="frame" x="121" y="392" width="174" height="30"/>
+                                <state key="normal" title="Upload new Profile Photo"/>
+                                <connections>
+                                    <action selector="pressedUpload:" destination="d3F-at-7I8" eventType="touchUpInside" id="eXa-gV-4I6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xoz-MB-ehX">
+                                <rect key="frame" x="159" y="519" width="98" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Update">
+                                    <color key="titleShadowColor" systemColor="secondarySystemBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressedUpdate:" destination="d3F-at-7I8" eventType="touchUpInside" id="v2d-ji-zLZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Kis-1T-LTk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Kis-1T-LTk" firstAttribute="trailing" secondItem="6lU-ZQ-yqD" secondAttribute="trailing" constant="106" id="0bn-kc-PmN"/>
+                            <constraint firstItem="ztK-I3-ced" firstAttribute="top" secondItem="h0b-NO-hyy" secondAttribute="bottom" constant="37" id="2qR-J3-63q"/>
+                            <constraint firstItem="Kis-1T-LTk" firstAttribute="trailing" secondItem="Xoz-MB-ehX" secondAttribute="trailing" constant="157" id="Gpa-OT-z9b"/>
+                            <constraint firstItem="ztK-I3-ced" firstAttribute="centerX" secondItem="Xoz-MB-ehX" secondAttribute="centerX" id="Qzf-14-SbI"/>
+                            <constraint firstItem="Kis-1T-LTk" firstAttribute="bottom" secondItem="Xoz-MB-ehX" secondAttribute="bottom" constant="259" id="RVo-kG-aZx"/>
+                            <constraint firstItem="Xoz-MB-ehX" firstAttribute="leading" secondItem="Kis-1T-LTk" secondAttribute="leading" constant="159" id="S8Z-dq-qwL"/>
+                            <constraint firstItem="6lU-ZQ-yqD" firstAttribute="top" secondItem="ztK-I3-ced" secondAttribute="bottom" constant="34" id="SBm-Wu-sUx"/>
+                            <constraint firstItem="h0b-NO-hyy" firstAttribute="trailing" secondItem="6lU-ZQ-yqD" secondAttribute="trailing" id="VGn-V2-NNj"/>
+                            <constraint firstItem="Xoz-MB-ehX" firstAttribute="top" secondItem="6lU-ZQ-yqD" secondAttribute="bottom" constant="29" id="W66-gP-GSr"/>
+                            <constraint firstItem="6lU-ZQ-yqD" firstAttribute="leading" secondItem="Kis-1T-LTk" secondAttribute="leading" constant="106" id="Z7e-Xm-TSJ"/>
+                            <constraint firstItem="h0b-NO-hyy" firstAttribute="leading" secondItem="6lU-ZQ-yqD" secondAttribute="leading" id="nRb-Pk-yHE"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="person.crop.square" catalog="system" id="ah9-Lx-KxK"/>
+                    <connections>
+                        <outlet property="displayNameTF" destination="6lU-ZQ-yqD" id="ZT1-dq-LGt"/>
+                        <outlet property="profilePicView" destination="h0b-NO-hyy" id="Wr5-QA-4vQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mB1-1T-xAL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4373.913043478261" y="-425.22321428571428"/>
+        </scene>
+        <!--My Tab BarVC-->
+        <scene sceneID="Isj-tb-pH8">
+            <objects>
+                <tabBarController id="PQh-rd-tgi" customClass="MyTabBarVC" customModule="Photo_Bucket" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="4Lw-pl-MWb">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="lmu-UK-R5R">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="g9Y-cF-r3a">
+                                <rect key="frame" x="20" y="7" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Log Out"/>
+                                <connections>
+                                    <action selector="pressedLogOut:" destination="PQh-rd-tgi" eventType="touchUpInside" id="jCK-zN-j1m"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MQp-8Z-rS0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="d3F-at-7I8" kind="relationship" relationship="viewControllers" id="QeT-ZE-CtC"/>
+                        <segue destination="zAM-Ku-9yb" kind="relationship" relationship="viewControllers" id="uhh-ZJ-h01"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IdX-Iv-dtC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3524" y="-424"/>
+        </scene>
+        <!--Photo Bucket Table View Controller-->
+        <scene sceneID="V7p-li-0rP">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NRH-OL-u8L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tableViewController id="l3y-0q-Vfg" customClass="PhotoBucketTableViewController" customModule="Photo_Bucket" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="3aB-0U-q8L">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="PWw-29-vH7">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PWw-29-vH7" id="FeB-wM-BTA">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="l3y-0q-Vfg" id="oGK-fd-XnF"/>
+                            <outlet property="delegate" destination="l3y-0q-Vfg" id="mHm-uO-ENg"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="" image="folder" catalog="system" selectedImage="folder" id="yV3-5M-mp3"/>
+                    <navigationItem key="navigationItem" id="ArO-XF-CKs">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="2FB-XY-yhT">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="PfM-cE-whL">
+                                <rect key="frame" x="358" y="4" width="36" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="person_add_36pt"/>
+                            </button>
+                            <connections>
+                                <segue destination="J5k-Dq-Tnc" kind="presentation" id="Dmr-54-g35"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="4374" y="374"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="stc-K6-3jZ">
+            <objects>
+                <tableViewController id="J5k-Dq-Tnc" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="6Il-bE-hiX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="j2F-W3-fUb">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="j2F-W3-fUb" id="wzV-y6-dpY">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="J5k-Dq-Tnc" id="p9m-2R-KZm"/>
+                            <outlet property="delegate" destination="J5k-Dq-Tnc" id="2ep-LD-U4N"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Gh-B1-WLR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5258" y="374"/>
         </scene>
     </scenes>
     <resources>
+        <image name="folder" catalog="system" width="128" height="97"/>
+        <image name="person.crop.square" catalog="system" width="128" height="114"/>
+        <image name="person_add_36pt" width="36" height="36"/>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -10,9 +10,8 @@ import UIKit
 class PhotoBucketTableViewController : UITableViewController{
 
     override func viewDidLoad() {
-        print("here")
-        let myDB = MyFirebaseDB("photos")
-        myDB.delete(docName: "jd5oUbj2COTNcUIuVCsZ")
         
     }
+    
+    
 }
