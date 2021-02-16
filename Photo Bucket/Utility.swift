@@ -11,3 +11,7 @@ import Firebase
 func currentTime() -> Timestamp {
     return Timestamp.init()
 }
+
+func logPrint(_ msg : String) {
+    print("[LOG] \(msg)")
+}

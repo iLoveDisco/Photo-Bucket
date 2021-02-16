@@ -15,7 +15,6 @@
 		8D8F8D5225BF6BE8006D7370 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D8F8D5025BF6BE8006D7370 /* Main.storyboard */; };
 		8D8F8D5425BF6BEA006D7370 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D8F8D5325BF6BEA006D7370 /* Assets.xcassets */; };
 		8D8F8D5725BF6BEA006D7370 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D8F8D5525BF6BEA006D7370 /* LaunchScreen.storyboard */; };
-		8D8F8D7425BF8130006D7370 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D8F8D7325BF8130006D7370 /* GoogleService-Info.plist */; };
 		8D8F8D7725BF8277006D7370 /* MyDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8F8D7625BF8277006D7370 /* MyDatabase.swift */; };
 		8D90CCE425D1C9530021F563 /* SignInPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D90CCE325D1C9530021F563 /* SignInPageVC.swift */; };
 		8D90CD0525D1D7040021F563 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D90CD0425D1D7040021F563 /* User.swift */; };
@@ -25,6 +24,10 @@
 		8DB54ED625D66B030038CFF4 /* PhotoDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB54ED525D66B030038CFF4 /* PhotoDetailVC.swift */; };
 		8DB54ED925D66B910038CFF4 /* ProfilePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB54ED825D66B910038CFF4 /* ProfilePageVC.swift */; };
 		8DB54EDC25D66BA30038CFF4 /* MembersTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB54EDB25D66BA30038CFF4 /* MembersTableVC.swift */; };
+		8DB54F8C25D864F60038CFF4 /* SharedAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB54F8B25D864F60038CFF4 /* SharedAlbum.swift */; };
+		8DB54FBD25D9D9840038CFF4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8DB54FBC25D9D9840038CFF4 /* GoogleService-Info.plist */; };
+		8DB54FC425DB04410038CFF4 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB54FC325DB04410038CFF4 /* Photo.swift */; };
+		8DF4FE6725DB563600AA979D /* PhotoUploadPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF4FE6625DB563600AA979D /* PhotoUploadPageVC.swift */; };
 		C5DF67EE5E4F51B95A0F6973 /* Pods_Photo_Bucket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B76E840E544969680BEBC52 /* Pods_Photo_Bucket.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,7 +44,6 @@
 		8D8F8D5325BF6BEA006D7370 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D8F8D5625BF6BEA006D7370 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D8F8D5825BF6BEA006D7370 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8D8F8D7325BF8130006D7370 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8D8F8D7625BF8277006D7370 /* MyDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDatabase.swift; sourceTree = "<group>"; };
 		8D90CCE325D1C9530021F563 /* SignInPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPageVC.swift; sourceTree = "<group>"; };
 		8D90CD0425D1D7040021F563 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -51,6 +53,10 @@
 		8DB54ED525D66B030038CFF4 /* PhotoDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailVC.swift; sourceTree = "<group>"; };
 		8DB54ED825D66B910038CFF4 /* ProfilePageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePageVC.swift; sourceTree = "<group>"; };
 		8DB54EDB25D66BA30038CFF4 /* MembersTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MembersTableVC.swift; sourceTree = "<group>"; };
+		8DB54F8B25D864F60038CFF4 /* SharedAlbum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedAlbum.swift; sourceTree = "<group>"; };
+		8DB54FBC25D9D9840038CFF4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8DB54FC325DB04410038CFF4 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		8DF4FE6625DB563600AA979D /* PhotoUploadPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoUploadPageVC.swift; sourceTree = "<group>"; };
 		9B76E840E544969680BEBC52 /* Pods_Photo_Bucket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Photo_Bucket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -89,7 +95,7 @@
 			children = (
 				8D90CD0325D1D6FA0021F563 /* Models */,
 				8D90CCE225D1C93D0021F563 /* View Controllers */,
-				8D8F8D7325BF8130006D7370 /* GoogleService-Info.plist */,
+				8D8F8D7625BF8277006D7370 /* MyDatabase.swift */,
 				8D8F8D4A25BF6BE8006D7370 /* AppDelegate.swift */,
 				8D8F8D4C25BF6BE8006D7370 /* SceneDelegate.swift */,
 				8D8F8D4E25BF6BE8006D7370 /* ViewController.swift */,
@@ -97,7 +103,7 @@
 				8D8F8D5325BF6BEA006D7370 /* Assets.xcassets */,
 				8D8F8D5525BF6BEA006D7370 /* LaunchScreen.storyboard */,
 				8D8F8D5825BF6BEA006D7370 /* Info.plist */,
-				8D8F8D7625BF8277006D7370 /* MyDatabase.swift */,
+				8DB54FBC25D9D9840038CFF4 /* GoogleService-Info.plist */,
 				8D30779A25C3B1F3005CFC05 /* Utility.swift */,
 			);
 			path = "Photo Bucket";
@@ -114,6 +120,7 @@
 				8DB54ED525D66B030038CFF4 /* PhotoDetailVC.swift */,
 				8DB54ED825D66B910038CFF4 /* ProfilePageVC.swift */,
 				8DB54EDB25D66BA30038CFF4 /* MembersTableVC.swift */,
+				8DF4FE6625DB563600AA979D /* PhotoUploadPageVC.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -122,6 +129,8 @@
 			isa = PBXGroup;
 			children = (
 				8D90CD0425D1D7040021F563 /* User.swift */,
+				8DB54F8B25D864F60038CFF4 /* SharedAlbum.swift */,
+				8DB54FC325DB04410038CFF4 /* Photo.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -156,6 +165,7 @@
 				8D8F8D4525BF6BE8006D7370 /* Resources */,
 				500BE6F438A2560C4CA46D9A /* [CP] Embed Pods Frameworks */,
 				BC061E74788B6D06A5D9A84F /* [CP] Copy Pods Resources */,
+				8DB54FC125D9DBE10038CFF4 /* Multiple Simulators */,
 			);
 			buildRules = (
 			);
@@ -204,7 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D8F8D5725BF6BEA006D7370 /* LaunchScreen.storyboard in Resources */,
-				8D8F8D7425BF8130006D7370 /* GoogleService-Info.plist in Resources */,
+				8DB54FBD25D9D9840038CFF4 /* GoogleService-Info.plist in Resources */,
 				8D8F8D5425BF6BEA006D7370 /* Assets.xcassets in Resources */,
 				8D8F8D5225BF6BE8006D7370 /* Main.storyboard in Resources */,
 			);
@@ -252,6 +262,24 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Photo Bucket/Pods-Photo Bucket-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		8DB54FC125D9DBE10038CFF4 /* Multiple Simulators */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Multiple Simulators";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n    custom_sim=`xcrun simctl list | grep ‘iPhone 11’ | awk -F’[()]’ ‘{print $2}’`\n\n    if [ ! -z “${custom_sim}” ] && [ “${TARGET_DEVICE_IDENTIFIER}” = “${custom_sim}” ]; then\n\n    /bin/sh multipleSimulatorsStartup.sh &\n\n    fi\n";
+		};
 		BC061E74788B6D06A5D9A84F /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -276,10 +304,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DB54FC425DB04410038CFF4 /* Photo.swift in Sources */,
 				8DB54ED625D66B030038CFF4 /* PhotoDetailVC.swift in Sources */,
+				8DF4FE6725DB563600AA979D /* PhotoUploadPageVC.swift in Sources */,
 				8D30779725C3A5D5005CFC05 /* PhotoBucketTableViewController.swift in Sources */,
 				8D8F8D4F25BF6BE8006D7370 /* ViewController.swift in Sources */,
 				8D30779B25C3B1F3005CFC05 /* Utility.swift in Sources */,
+				8DB54F8C25D864F60038CFF4 /* SharedAlbum.swift in Sources */,
 				8DB54ED925D66B910038CFF4 /* ProfilePageVC.swift in Sources */,
 				8D8F8D4B25BF6BE8006D7370 /* AppDelegate.swift in Sources */,
 				8DB54ED225D66AA30038CFF4 /* SharedAlbumVC.swift in Sources */,

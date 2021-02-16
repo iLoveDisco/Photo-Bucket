@@ -42,7 +42,13 @@ class ProfilePageVC : UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
+        
         self.db.listenForUser(uid: self.db.getCurrentUser().id) { (user) in
             self.profilePicView.load(url: URL(string: user.photoURL)!)
             self.displayNameTF.text = user.displayName
@@ -51,7 +57,6 @@ class ProfilePageVC : UIViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        
         self.db.closeListeners()
     }
     
@@ -64,7 +69,7 @@ class ProfilePageVC : UIViewController {
     @IBOutlet weak var displayNameTF: UITextField!
     
     @IBAction func pressedUpdate(_ sender: Any) {
-        self.db.uploadImage(img: self.profilePicView.image!) { (url) in
+        self.db.uploadPic(type: "profile-pics", img: self.profilePicView.image!) { (url) in
             self.db.updateUser(user: MyUser(displayName: self.displayNameTF.text!,
                                             email: self.db.getCurrentUser().email,
                                             id: self.db.getCurrentUser().id, photoURL: url)) {

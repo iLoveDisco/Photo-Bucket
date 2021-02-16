@@ -17,6 +17,7 @@ class SignInPageVC : UIViewController, FUIAuthDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // self.db.signOut()
         // Set up the sign in VC
         authUI!.delegate = self
         self.authUI?.providers = [FUIGoogleAuth(), FUIEmailAuth()]

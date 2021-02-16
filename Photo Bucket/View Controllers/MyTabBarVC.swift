@@ -20,6 +20,8 @@ class MyTabBarVC : UITabBarController{
             }
         }
         
+        let vc : PhotoBucketTableViewController = (self.viewControllers![1] as! UINavigationController).viewControllers.first as! PhotoBucketTableViewController
+
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -28,6 +30,7 @@ class MyTabBarVC : UITabBarController{
     }
     
     @IBAction func pressedLogOut(_ sender: Any) {
+        print("Pressed")
         db.signOut()
     }
 }

@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>563354060394-6kihs9d1tucud4au1bckhco3pus21nn5.apps.googleusercontent.com</string>
+	<string>676578845819-ir9m99taiarqi48hlg8o7bealbk0bslg.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.563354060394-6kihs9d1tucud4au1bckhco3pus21nn5</string>
+	<string>com.googleusercontent.apps.676578845819-ir9m99taiarqi48hlg8o7bealbk0bslg</string>
 	<key>API_KEY</key>
-	<string>AIzaSyArnV3gnKed_QPKYjWv47Iol899-xuyByw</string>
+	<string>AIzaSyDdSTGXKcXIKjbtjFYoz-LeaBTvQ-Dsc6o</string>
 	<key>GCM_SENDER_ID</key>
-	<string>563354060394</string>
+	<string>676578845819</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>edu.rose-hulman.tuey.Photo-Bucket</string>
 	<key>PROJECT_ID</key>
-	<string>photobucket-20f92</string>
+	<string>photobucket-767fb</string>
 	<key>STORAGE_BUCKET</key>
-	<string>photobucket-20f92.appspot.com</string>
+	<string>photobucket-767fb.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:563354060394:ios:8bd9c1df52965fd0ab6c13</string>
+	<string>1:676578845819:ios:4d2dfc0c758061e16aaede</string>
 </dict>
 </plist>
